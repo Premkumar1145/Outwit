@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="1" passed="0" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-28T17:27:47Z" name="Default suite" finished-at="2023-08-28T17:29:36Z" duration-ms="109384">
+    <groups>
+    </groups>
+    <test started-at="2023-08-28T17:27:47Z" name="Default test" finished-at="2023-08-28T17:29:36Z" duration-ms="109384">
+      <class name="com.outwit.testexecution.ABFRLHappyFlowCopy">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:com.outwit.testexecution.ABFRLHappyFlowCopy@7f6f61c8]" started-at="2023-08-28T22:57:47Z" name="beforeSuite" finished-at="2023-08-28T22:57:47Z" duration-ms="128" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.outwit.testexecution.ABFRLHappyFlowCopy@7f6f61c8]" started-at="2023-08-28T22:57:47Z" name="beforeMethod" finished-at="2023-08-28T22:57:47Z" duration-ms="5" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.outwit.testexecution.ABFRLHappyFlowCopy.CreateOrder() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="CreateOrder()[pri:0, instance:com.outwit.testexecution.ABFRLHappyFlowCopy@7f6f61c8]" started-at="2023-08-28T22:57:47Z" name="CreateOrder" finished-at="2023-08-28T22:59:25Z" duration-ms="98348" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected header "Accept" was not "text/xml", was "null". Headers are:
+Date=Mon, 28 Aug 2023 17:29:04 GMT
+Content-Length=7350
+Content-Type=text/xml; charset=UTF-8
+InteropSentData=true
+X-FRAME-OPTIONS=SAMEORIGIN
+Set-Cookie=JSESSIONID=wm49MSHlY3mbuvaGoHyNKr43urijIeRr49Zo9rtHUVIrNHqh-KGi!837802638; path=/; HttpOnly
+X-UA-Compatible=IE=EmulateIE8
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected header "Accept" was not "text/xml", was "null". Headers are:
+Date=Mon, 28 Aug 2023 17:29:04 GMT
+Content-Length=7350
+Content-Type=text/xml; charset=UTF-8
+InteropSentData=true
+X-FRAME-OPTIONS=SAMEORIGIN
+Set-Cookie=JSESSIONID=wm49MSHlY3mbuvaGoHyNKr43urijIeRr49Zo9rtHUVIrNHqh-KGi!837802638; path=/; HttpOnly
+X-UA-Compatible=IE=EmulateIE8
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:505)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:687)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:184)
+	at io.restassured.specification.ResponseSpecification$header$0.callCurrent(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:50)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:194)
+	at io.restassured.internal.ResponseSpecificationImpl.header(ResponseSpecificationImpl.groovy:191)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.header(ValidatableResponseOptionsImpl.java:124)
+	at com.outwit.base.BasePageActions.OMSAPICall(BasePageActions.java:1156)
+	at com.outwit.testexecution.ABFRLHappyFlowCopy.CreateOrder(ABFRLHappyFlowCopy.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:639)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:816)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1124)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:774)
+	at org.testng.TestRunner.run(TestRunner.java:624)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1191)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)
+	at org.testng.TestNG.run(TestNG.java:1024)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateOrder -->
+        <test-method is-config="true" signature="afterMethod(java.lang.reflect.Method, org.testng.ITestResult)[pri:0, instance:com.outwit.testexecution.ABFRLHappyFlowCopy@7f6f61c8]" started-at="2023-08-28T22:59:30Z" name="afterMethod" finished-at="2023-08-28T22:59:32Z" duration-ms="1928" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.outwit.testexecution.ABFRLHappyFlowCopy.CreateOrder() throws java.lang.Exception]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=CreateOrder status=FAILURE method=ABFRLHappyFlowCopy.CreateOrder()[pri:0, instance:com.outwit.testexecution.ABFRLHappyFlowCopy@7f6f61c8] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.outwit.testexecution.ABFRLHappyFlowCopy@7f6f61c8]" started-at="2023-08-28T22:59:36Z" name="tearDown" finished-at="2023-08-28T22:59:36Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="tearDownAfterSuite()[pri:0, instance:com.outwit.testexecution.ABFRLHappyFlowCopy@7f6f61c8]" started-at="2023-08-28T22:59:36Z" name="tearDownAfterSuite" finished-at="2023-08-28T22:59:37Z" duration-ms="250" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownAfterSuite -->
+      </class> <!-- com.outwit.testexecution.ABFRLHappyFlowCopy -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

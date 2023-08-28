@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><Order DocumentType="0001" EnterpriseCode="Matrix" OrderDate="2023-08-28T21:21:11.835669100+04:00" OrderNo="Test_2023082822574706" PaymentStatus="AUTHORIZED">
+	<OrderLines>
+		<OrderLine OrderedQty="1" PrimeLineNo="1" ReqDeliveryDate="2023-08-28T22:57">
+			<Item ItemID="100013" UnitCost="10.0" UnitOfMeasure="EACH"/>
+		</OrderLine>
+	</OrderLines>
+	<PersonInfoShipTo AddressLine1="234 Copley Place" City="Boston" Country="US" DayPhone="" EMailID="" FirstName="Lakshmi" LastName="A" MobilePhone="" State="MA" ZipCode="02116"/>
+	<PersonInfoBillTo AddressLine1="234 Copley Place" City="Boston" Country="US" DayPhone="" EMailID="" FirstName="Lakshmi" LastName="A" MobilePhone="" State="MA" ZipCode="02116"/>
+</Order>
